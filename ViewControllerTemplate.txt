@@ -1,0 +1,29 @@
+import Foundation
+import UIKit
+
+class ${name}ViewController: ViewController, ${name}ViewDelegate {
+
+    private var mainView: ${name}View!
+
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+    }
+
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+
+    override func loadView() {
+        super.loadView()
+        self.view.backgroundColor = UIColor.whiteColor()
+
+        setupViewController()
+    }
+
+    private func setupViewController() {
+        self.mainView = ${name}View()
+        self.mainView.applyDelegate(self)
+        self.view.addSubview(self.mainView)
+        self.mainView.autoPinEdgesToSuperviewEdges()
+    }
+}
