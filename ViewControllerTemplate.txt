@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 
-class ${name}ViewController: ViewController, ${name}ViewDelegate {
+class ${name}ViewController: UIViewController, ${name}ViewDelegate {
 
     private var mainView: ${name}View!
 
